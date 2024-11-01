@@ -19,18 +19,7 @@ while operating a car, along with possible status messages based on the transmis
 ### Methods
 
 - **`String getStatus()`**  
-  Retrieves the current status of the transmission as a `String`, with possible values such as:
-  - `"OK: everything is OK."`: Indicates that the speed or gear was changed successfully without the need to alter the other.
-  - `"OK: you may increase the gear."`: Speed increased, and the new speed falls within the next gear’s range.
-  - `"OK: you may decrease the gear."`: Speed decreased, and the new speed falls within the previous gear’s range.
-  - `"Cannot increase speed, increase gear first."`: Speed increase is not possible without first increasing the gear.
-  - `"Cannot decrease speed, decrease gear first."`: Speed decrease is not possible without first decreasing the gear.
-  - `"Cannot increase gear, increase speed first."`: Gear increase is not possible without first increasing the speed.
-  - `"Cannot decrease gear, decrease speed first."`: Gear decrease is not possible without first decreasing the speed.
-  - `"Cannot increase speed. Reached maximum speed."`: Indicates that the maximum speed limit has been reached.
-  - `"Cannot decrease speed. Reached minimum speed."`: Indicates that the speed cannot be decreased further as it is already at zero.
-  - `"Cannot increase gear. Reached maximum gear."`: Indicates that the gear cannot be increased as it is already at the highest gear (gear 5).
-  - `"Cannot decrease gear. Reached minimum gear."`: Indicates that the gear cannot be decreased as it is already at the lowest gear (gear 1).
+  Gets the current status that the vehicle is in. 
 
 - **`int getSpeed()`**  
   Gets the current speed of the vehicle.
@@ -58,4 +47,23 @@ while operating a car, along with possible status messages based on the transmis
 
 The `RegularManualTransmission` class implements `ManualTransmission`, simulating a manual transmission with defined speed ranges for each gear.
 
-And other predefined messages based on speed and gear limitations.
+- **`String getStatus()`**  
+  Retrieves the current status of the transmission as a `String`, with possible values such as:
+  - `"OK: everything is OK."`: Indicates that the speed or gear was changed successfully without the need to alter the other.
+  - `"OK: you may increase the gear."`: Speed increased, and the new speed falls within the next gear’s range.
+  - `"OK: you may decrease the gear."`: Speed decreased, and the new speed falls within the previous gear’s range.
+  - `"Cannot increase speed, increase gear first."`: Speed increase is not possible without first increasing the gear.
+  - `"Cannot decrease speed, decrease gear first."`: Speed decrease is not possible without first decreasing the gear.
+  - `"Cannot increase gear, increase speed first."`: Gear increase is not possible without first increasing the speed.
+  - `"Cannot decrease gear, decrease speed first."`: Gear decrease is not possible without first decreasing the speed.
+  - `"Cannot increase speed. Reached maximum speed."`: Indicates that the maximum speed limit has been reached.
+  - `"Cannot decrease speed. Reached minimum speed."`: Indicates that the speed cannot be decreased further as it is already at zero.
+  - `"Cannot increase gear. Reached maximum gear."`: Indicates that the gear cannot be increased as it is already at the highest gear (gear 5).
+  - `"Cannot decrease gear. Reached minimum gear."`: Indicates that the gear cannot be decreased as it is already at the lowest gear (gear 1).
+
+
+
+
+
+
+
